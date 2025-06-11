@@ -156,7 +156,12 @@ sudo ufw allow 40400
 sudo ufw allow 40500
 sudo ufw allow 8080
 ```
-
+> **Tip:**  
+> If facing Error: No command Found
+> ```bash
+> sudo apt update
+> sudo apt install ufw -y
+> ```
 ---
 
 ### 9. Start Sequencer Node
@@ -213,7 +218,7 @@ http://localhost:8080 | jq -r ".result"
 ```
 - Replace both `BLOCK_NUMBER` with the number from Step 1.
 
-**Step 3: Register with Discord**
+🟥**Step 3: Register with Discord** 🟥 **[DEPRECATED]**
 
 Type the following command in the Discord server:
 ```
@@ -226,6 +231,14 @@ Type the following command in the Discord server:
 
 Once you submit, you'll obtain your Apprentice Role!
 
+🆕**Step 4: Get your Peer ID & Check Status**
+- Get your Peer ID that starts with 16nlsdfl
+```bash
+sudo docker logs $(docker ps -q --filter ancestor=aztecprotocol/aztec:latest | head -n 1) 2>&1 | grep -i "peerId" | grep -o '"peerId":"[^"]*"' | cut -d'"' -f4 | head -n 1
+```
+
+- Go over here: [Aztec P2P Explorer](https://aztec.nethermind.io/)
+- Input your Peer Id and keep track of it
 ---
 
 ## 📝 Notes
