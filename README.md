@@ -210,6 +210,8 @@ http://localhost:8080 | jq -r ".result.proven.number"
 - Example output: `23546`
 - If running on a server, replace `http://localhost:8080` with your server's IP (keep port 8080).
 
+---
+
 **Step 2: Generate your sync proof**
 ```bash
 curl -s -X POST -H 'Content-Type: application/json' \
@@ -217,6 +219,8 @@ curl -s -X POST -H 'Content-Type: application/json' \
 http://localhost:8080 | jq -r ".result"
 ```
 - Replace both `BLOCK_NUMBER` with the number from Step 1.
+  
+---
 
 🟥**Step 3: Register with Discord** 🟥 **[DEPRECATED]**
 
@@ -230,6 +234,8 @@ Type the following command in the Discord server:
     - **proof:** Sync proof (base64 string from Step 2)
 
 Once you submit, you'll obtain your Apprentice Role!
+
+---
 
 🆕**Step 4: Get your Peer ID & Check Status**
 - Get your Peer ID that starts with 16nlsdfl
