@@ -202,9 +202,7 @@ Go to the Discord channel: [Aztec Discord](https://discord.com/channels/11446927
 
 **Step 1: Get the latest proven block number**
 ```bash
-curl -s -X POST -H 'Content-Type: application/json' \
--d '{"jsonrpc":"2.0","method":"node_getL2Tips","params":[],"id":67}' \
-http://localhost:8080 | jq -r ".result.proven.number"
+curl -s -X POST -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"node_getL2Tips","params":[],"id":67}' http://localhost:8080 | jq -r ".result.proven.number"
 ```
 - Save this block number for the next steps.
 - Example output: `23546`
