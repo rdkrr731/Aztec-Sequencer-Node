@@ -245,6 +245,13 @@ sudo docker logs $(docker ps -q --filter ancestor=aztecprotocol/aztec:latest | h
 - Input your Peer Id and keep track of it
 ---
 
+🆕**Step 5: Get Guardian Role After running your node for atleast 3-4days**
+- Head over to [Discord](https://discord.com/channels/1144692727120937080/1370120277752549487)
+- Type `/checkip` & enter your vps IP & your EVM address 
+
+---
+
+
 ## 📝 Notes
 
 - Always ensure your private key is kept secure.
